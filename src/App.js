@@ -1,20 +1,15 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './App.css';
-import axios from 'axios';
+import Cat from './components/Cat';
 
 function App() {
-
-  useEffect(() => {
-    axios.get('https://catfact.ninja/fact')
-      .then(resp => console.log(resp))
-      .catch(err => console.error(err))
-  })
 
   return (
     <div className="App">
       Async Redux Project
+      <Cat />
     </div>
   );
 }
 
-export default App;
+export default (App);
