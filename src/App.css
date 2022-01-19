@@ -1,7 +1,3 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +31,44 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App{
+  text-align: center;
+  background: lightslategray;
+  height: 100vh;
+}
+
+.App h1{
+  font-size: 4rem;
+}
+
+.Cat{
+  margin: 2% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height:80vh;
+}
+
+.Cat img{
+  margin: 2% 0;
+  width: 50%;
+}
+
+.Cat button{
+  width: 20%;
+  height: 5vh;
+  font-size: 2rem;
+  border: none;
+  border-radius: 40px;
+  transition: 0.2s ease-in-out;
+}
+
+.Cat button:hover{
+  background: black;
+  color: white;
+  transition: 0.2s ease-in-out;
 }

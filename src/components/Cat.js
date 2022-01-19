@@ -10,7 +10,7 @@ const Cat = ({url, fact, fetching, dispatch}) => {
     }, [])
 
     return(
-        <div className="cat">
+        <div className="Cat">
             {fetching ? <Loading /> : 
             <>
                 <h2>{fact}</h2>
