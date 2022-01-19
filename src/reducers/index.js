@@ -1,3 +1,3 @@
 import factReducer from './factReducer';
 
-return factReducer;
+export default factReducer;

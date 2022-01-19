@@ -1,6 +1,7 @@
+import { FETCH_START, FETCH_SUCCESS, FETCH_FAILED } from '../actions/factActions';
 
-const intiialState = {
-    fact: {},
+const initialState = {
+    fact: '',
     fetching: false,
     error: ''
 }
@@ -10,13 +11,15 @@ const reducer = (state = initialState, action) => {
         
         case FETCH_START:
             return({
-                fact: {},
+                ...state,
+                fact: '',
                 fetching: true,
                 error: ''
             })
 
         case FETCH_SUCCESS:
             return({
+                ...state,
                 fact: action.payload,
                 fetching: false,
                 error: ''
@@ -24,7 +27,8 @@ const reducer = (state = initialState, action) => {
         
         case FETCH_FAILED:
             return({
-                fact: {},
+                ...state,
+                fact: '',
                 fetching: false,
                 error: action.payload
             })
